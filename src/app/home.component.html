@@ -1,0 +1,17 @@
+<div class="header-container">
+  <div class="cart-icon">
+    <img src="https://tep-hol.com.ua/wp-content/uploads/2020/02/e0edb74f55e771e244bbc63985777b31.jpg" alt="Кошик">
+  </div>
+  <h2>Доступні товари</h2>
+  <a routerLink="/cart" class="checkout-btn">Перейти до кошика</a>
+</div>
+  
+  <div *ngFor="let product of products">
+    <h3 class="product-name">{{ product.name }}</h3>
+    <p *ngIf="product.description">Опис: {{ product.description }}</p>
+    <div class="product-info">
+      <p>Ціна: {{ product.price | currency }}</p>
+      <button class="buy-btn" (click)="addToCart(product)">Купити зараз</button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

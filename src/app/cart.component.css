@@ -1,0 +1,63 @@
+.cart-container {
+    border: 1px solid #ccc; /* Сіра рамка навколо кошика */
+    padding: 20px; 
+    margin-top: 20px; 
+    border-radius: 5px; /* Закруглені кути */
+    background-color: #f9f9f9; /* фон */
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ddd; 
+    padding: 10px 0; /* Внутрішні відступи для товарів */
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none; 
+  }
+  
+  .cart-item h3 {
+    margin: 0; 
+  }
+  
+  .clear-cart-btn {
+    background-color: #dc3545; /*  колір для кнопки очищення */
+    color: white; 
+    border: none; 
+    padding: 10px 15px; /* Внутрішні відступи кнопки */
+    cursor: pointer; /* CLICK */
+    margin-top: 10px; /* Відступ зверху */
+  }
+  
+  .clear-cart-btn:hover {
+    background-color: #c82333; /* тіпа тіньок */
+  }
+  
+  .back-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .back-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .header-container {
+    position: relative;
+    padding-top: -20px;
+}
+
+.cart-icon {
+    position: absolute;
+    top: -123px;
+    left: 10px;
+}
+
+.cart-icon img {
+    width: 100px;
+    height: auto;
+}

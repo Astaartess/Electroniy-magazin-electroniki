@@ -1,0 +1,27 @@
+<div class="header-container">
+  <div class="cart-icon">
+    <img src="https://tep-hol.com.ua/wp-content/uploads/2020/02/e0edb74f55e771e244bbc63985777b31.jpg" alt="Кошик">
+  </div>
+</div>
+
+<div class="cart-container">
+  <button class="back-btn" routerLink="/">Повернутися на головну сторінку</button>
+  <h2>Кошик</h2>
+
+  <div *ngIf="items.length > 0; else emptyCart">
+    <div *ngFor="let item of items" class="cart-item">
+      <h3>{{ item.name }}</h3>
+      <p>Ціна: {{ item.price | currency }}</p>
+      <p>Опис: {{ item.description }}</p>
+    </div>
+
+    <button class="clear-cart-btn" (click)="clearCart()">Очистити кошик</button>
+    
+
+    <h3>Загальна сума: {{ totalSum | currency }}</h3>
+  </div>
+
+  <ng-template #emptyCart>
+    <p>Кошик порожній.</p>
+  </ng-template>
+</div>

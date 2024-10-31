@@ -1,0 +1,80 @@
+.checkout-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+.product-name {
+    color: #007bff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.buy-btn {
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+.header-container {
+    position: relative;
+    padding-top: -20px; /* Зменшено з 120px */
+}
+
+.cart-icon {
+    position: absolute;
+    top: -123px; /* Змінено з 10px */
+    left: 10px;
+}
+
+.cart-icon img {
+    width: 100px;
+    height: auto;
+}
+
+/* Стилі для кнопки переходу до кошика */
+.checkout-btn {
+    /* Тут ви можете додати стилі для кнопки, наприклад: */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* При наведенні на кнопку */
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
